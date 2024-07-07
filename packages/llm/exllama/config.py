@@ -13,7 +13,7 @@ def exllama(version, branch=None, requires=None, default=False):
         pkg['alias'] = 'exllama'
     
     if not branch:
-        branch = version
+        branch = f'v{version}'
         
     pkg['build_args'] = {
         'EXLLAMA_VERSION': version,
